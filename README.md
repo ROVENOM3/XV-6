@@ -1,65 +1,104 @@
-# XV-6
-first time trying some os level stuff on a popular os xv-6 😅
+# 🧠 xv6 Custom Operating System
 
+> ⚙️ Learning operating systems by building and modifying them from scratch.
 
+---
 
-🧠 xv6 Custom OS Experiments
+## 📌 Overview
 
-This repository contains my modified version of xv6, a minimalist Unix-like operating system developed at MIT for educational purposes.
-The goal of this project is to understand core OS concepts by implementing and modifying kernel features.
+This repository contains my customized version of **xv6**, a minimalist Unix-like operating system developed at MIT.
+The purpose of this project is to gain a deep understanding of **operating system concepts** through hands-on kernel development.
 
-🚀 What is xv6?
+---
 
-xv6 is a simple Unix-like operating system that helps in learning:
+## 🚀 Key Concepts Explored
 
-Process management (fork, exec, wait)
-Memory management (virtual memory)
-File systems
-System calls
-Scheduling
+* Process Management (`fork`, `exec`, `wait`)
+* Memory Management (virtual memory)
+* File System operations
+* System Calls (user → kernel interaction)
+* CPU Scheduling
 
-🔧 What I’ve done in this repo
-✅ Added custom system calls
-✅ Explored kernel-user interaction
-✅ Modified process behavior
-✅ Debugged kernel-level errors
-🚧 More features coming...
-🛠️ Tech Stack
-C (Kernel + User programs)
-Assembly (low-level operations)
-QEMU (emulator)
-Makefile (build system)
-⚙️ Setup & Run
-1. Clone repo
+---
+
+## 🔧 Features & Modifications
+
+* ✅ Added custom system calls
+* ✅ Explored kernel-user space interaction
+* ✅ Debugged and fixed kernel-level errors
+* 🚧 Ongoing experiments with scheduling and memory
+
+---
+
+## 🛠️ Tech Stack
+
+* **Language:** C, Assembly
+* **Tools:** QEMU (emulator), GCC, Make
+* **Environment:** Linux / Kali / WSL
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/your-username/xv6-custom.git
 cd xv6-custom
-2. Install dependencies (Linux / Kali / WSL)
+```
+
+### 2. Install dependencies
+
+```bash
 sudo apt update
 sudo apt install build-essential qemu-system-x86
-3. Run xv6
+```
+
+### 3. Run xv6
+
+```bash
 make clean
 make qemu
-🧪 Example Feature (Custom System Call)
+```
 
-Example: Added a system call to print a message from kernel space.
+---
 
+## 🧪 Example: Custom System Call
+
+```c
 int sys_hello(void) {
     cprintf("Hello from kernel!\n");
     return 0;
 }
-📚 Learning Outcomes
-Deep understanding of OS internals
-Hands-on experience with kernel development
-Improved debugging and low-level programming skills
-🎯 Future Work
-Priority-based scheduling
-Memory management improvements
-File system enhancements
-Custom shell commands
-🤝 Contributing
+```
 
-This is a learning project, but suggestions and improvements are welcome!
+This demonstrates how user programs interact with the kernel via system calls.
 
-📜 License
+---
 
-Based on MIT xv6-public. Follow original license terms.
+## 📚 Learning Outcomes
+
+* Strong understanding of OS internals
+* Practical experience with kernel programming
+* Improved debugging and low-level coding skills
+
+---
+
+## 🎯 Future Enhancements
+
+* Priority-based CPU scheduling
+* Advanced memory management
+* File system improvements
+* Custom shell commands
+
+---
+
+## 🤝 Contributing
+
+This is a personal learning project, but contributions and suggestions are welcome.
+
+---
+
+## 📜 License
+
+Based on MIT xv6-public. Refer to original license for details.
