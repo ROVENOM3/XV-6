@@ -43,7 +43,7 @@ The purpose of this project is to gain a deep understanding of **operating syste
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/xv6-custom.git
+git clone https://github.com/ROVENOM3/XV-6.git
 cd xv6-custom
 ```
 
